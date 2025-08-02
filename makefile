@@ -63,3 +63,6 @@ quadbase.o: quadbase.c quadbase.h
 clean:
 	$(RM) *.o *.a
 
+get_size: get_size.c
+	$(CC) $(CFLAGS) -I. get_size.c -o get_size
+	./get_size
